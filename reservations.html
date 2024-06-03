@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- this is navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="left">
+          <h1 class="text-2xl font-bold text-red-600">Restaurant</h1>
+        </div>
+        <div class="right">
+          <ul class="nav-items">
+            <li><a class="hover:text-red-600" href="index.html">Home</a></li>
+            <li>
+              <a class="hover:text-red-600" href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a class="hover:text-red-600" href="reservations.html"
+                >Reservation</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-red-600" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="col-span-10 bg-gray-200 min-h-screen flex justify-center items-center"
+    >
+      <div class="max-w-75 bg-gray-400 rounded-lg p-6">
+        <h1 class="text-3xl font-bold text mb-6 pt-6 text-center">
+          Please Reserver Your sit
+        </h1>
+
+        <!-- information -->
+        <div class="mt-6 px-6">
+          <!-- Name , Email-->
+          <div class="flex gap-4 py-3">
+            <label class="form-control w-full">
+              <div class="py-2">
+                <span class="label-text">Your Name : </span>
+              </div>
+              <input
+                type="text"
+                placeholder=" Your Name"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+            <label class="form-control w-full">
+              <div class="label py-2">
+                <span class="label-text">Your Email : </span>
+              </div>
+              <input
+                type="email"
+                placeholder=" Your Email"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+          </div>
+          <!-- Phone, Number of Guests -->
+          <div class="flex gap-4 py-3">
+            <label class="form-control w-full">
+              <div class="label py-2">
+                <span class="label-text">Phone Number</span>
+              </div>
+              <input
+                type="text"
+                placeholder=" Your Phone number"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+            <label class="form-control w-full">
+              <div class="label py-2">
+                <span class="label-text">Number of Guests</span>
+              </div>
+              <input
+                type="number"
+                placeholder=" Number of Guests"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+          </div>
+          <!--  Date, Time -->
+          <div class="flex gap-4 py-3">
+            <label class="form-control w-full">
+              <div class="label py-2">
+                <span class="label-text">Date</span>
+              </div>
+              <input
+                type="date"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+            <label class="form-control w-full">
+              <div class="label py-2">
+                <span class="label-text">Reservation Time</span>
+              </div>
+              <input
+                type="time"
+                placeholder=" Number of Guests"
+                class="input input-bordered w-full border-2 border-black rounded-md"
+              />
+            </label>
+          </div>
+          <!-- Special Request -->
+          <div class="py-3">
+            <label>
+              <div class="label py-2">
+                <span class="label-text py-2">Special Request</span>
+              </div>
+              <textarea
+                class="textarea textarea-bordered h-24 w-full border-2 border-black rounded-md"
+                placeholder=" Special Request"
+              ></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <button
+            class="btn bg-green-600 hover:bg-green-500/60 text-white p-4 w-48 rounded-lg text-white font-bold mb-6"
+          >
+            Reserve Now
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
