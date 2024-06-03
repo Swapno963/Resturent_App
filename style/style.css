@@ -47,7 +47,11 @@ a:visited {
   background-image: url("/images/topBanner.png");
   height: 60vh;
   background-size: cover;
-  opacity: 0.9;
+}
+.reservation {
+  background-image: url("/images/take_reservation.jpg");
+  height: 60vh;
+  background-size: cover;
 }
 
 .hero {
